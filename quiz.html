@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roberta</title>
+
+</head>
+<body>
+    <header>
+        <img src="midias/logo.png" alt="capa">
+    </header>
+    <nav>
+        <a href="index.html">INÍCIO</a>
+        <a href="produtos.html">PRODUTOS</a>
+        <a href="contato.html">CONTATO</a>
+        <a href="quiz.html">QUESTIONÁRIO</a>
+    
+    </nav>
+     <section class="quiz-section">
+       
+        <form id="quizform">
+            <h2>Quiz de Acessórios: Teste Seus Conhecimentos!</h2>
+            <section class="question">
+                <h3>Qual destes materiais é frequentemente usado na fabricação de jóias?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()">A) Plástico</label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()">B) Ouro</label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()">C) Papel</label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()">D) metal</label><br>
+            </section>
+
+            <section class="question">
+
+                <h3>Qual acessório é conhecido por ser usado no pulso?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()">A)  Brinco</label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()">B) Colar</label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()">C) Relógio</label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()">D) cinto</label><br>
+            </section>
+                <!-- mesma estrutura para as outras perguntas -->
+
+                <section class="question">
+                    <h3>O que é um "broche"?</h3>
+                    <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()">A)  Um tipo de cinto </label><br>
+                    <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()">B) Um acessório que se prende à roupa </label><br>
+                    <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()">C) Uma pulseira </label><br>
+                    <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()">D) Um tipo de colar  </label><br>
+                </section>
+
+                <section class="question">
+                    <h3>Qual destes acessórios é frequentemente associado a uma imagem mais formal?</h3>
+                    <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()">A) Boné </label><br>
+                    <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()">B) Gravata</label><br>
+                    <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()">C) Pulseira de silicone</label><br>
+                    <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()">D) Chapeuzinho de festa</label><br>
+                </section>
+
+                <section class="question">
+                    <h3>Qual acessório é usado para proteger os olhos do sol?</h3>
+                    <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()">A)Óculos de sol </label><br>
+                    <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()">B)  Lenço</label><br>
+                    <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()">C) Relógio </label><br>
+                    <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()">D)  Colar </label><br>
+                </section>
+
+                <section class="question">
+                    <h3>O que caracteriza um "colar choker"?</h3>
+                    <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()">A) É um colar longo</label><br>
+                    <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()">B) É um colar que se ajusta bem ao pescoço</label><br>
+                    <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()">C) É feito de pérolas</label><br>
+                    <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()">D) É sempre dourado</label><br>
+                </section>
+
+                <section class="question">
+                    <h3>Qual destes acessórios é tradicionalmente usado em casamentos?</h3>
+                    <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()">A) Aliança </label><br>
+                    <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()">B)  Boné</label><br>
+                    <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()">C) Colar de plástico</label><br>
+                    <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()">D) Cinto de couro</label><br>
+                </section>
+
+                <section class="question">
+                    <h3> O que é um "berloque"?</h3>
+                    <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()">A) Um tipo de relógio </label><br>
+                    <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()">B)  Um pingente que se adiciona a pulseiras </label><br>
+                    <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()">C) Um colar longo</label><br>
+                    <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()">D) Um tipo de anel</label><br>
+                </section>
+
+                <section class="question">
+                    <h3>O que é um "lenço de seda"?</h3>
+                    <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()">A) Um acessório para o pescoço ou cabeça </label><br>
+                    <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()">B)  Um tipo de colar </label><br>
+                    <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()">C)  Um brinco</label><br>
+                    <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()">D)  Um chapéu</label><br>
+                </section>
+
+                <section class="question">
+                    <h3>O que são "ear plugs" em termos de acessórios?</h3>
+                    <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()">A) Acessórios para o cabelo </label><br>
+                    <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()">B)  Brincos que se ajustam ao ouvido</label><br>
+                    <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()">C) Dispositivos para bloquear ruídos</label><br>
+                    <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()">D) Pulseiras que tocam música</label><br>
+                </section>
+    
+
+                <button type="button"  id= "enviar" onclick="submitQuiz()">Enviar respostas</button>
+                <button type="button"  id="reiniciar" onclick="botao()" disabled>Fazer novamente</button>
+
+        </form>
+
+        <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="som/perdeu.mp3" preload="auto"></audio>
+        
+
+        
+        <section id="result"></section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
